@@ -1,19 +1,19 @@
 # Neural Net_implementations
-1.NN_implementation_1: Algorithm without using built in python packages
+i.*NN_implementation_1*: Algorithm without using built in python packages
 
-2. NN_Multiclass: NN Algorithm for multi class classification implemented in R using neuralnet library and iris dataset
+ii.*NN_Multiclass*: NN Algorithm for multi class classification implemented in R using neuralnet library and iris dataset
 
-3. Nnet_multiclass: Building multi class cassification neural network model tothat predicts alphabet id using alphabet_features.txt data set.Variable description as given below
+iii.*Nnet_multiclass*: Building multi class cassification neural network model tothat predicts alphabet id using alphabet_features.txt data set.Variable description as given below
 
-  -Each row data collected from image of Hindi alphabet
+  *Each row data collected from image of Hindi alphabet
 
-  -Target attribute is the alphabet id
+  *Target attribute is the alphabet id
 
-  -72 attributes are features collected from the image of the alphabet
+  *72 attributes are features collected from the image of the alphabet
 
-  -Each row has details about one alphabet
+  *Each row has details about one alphabet
 
-4. Classification_model1: NN Algorithm for two class classification implemented in R using neuralnet library on Bank data set with variable description as given below:
+iv.*Classification_model1*: NN Algorithm for two class classification implemented in R using neuralnet library on Bank data set with variable description as given below:
 
 Variable Description:
 ID: Customer ID
