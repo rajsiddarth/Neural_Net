@@ -1,7 +1,7 @@
 # Neural Net_implementations
 NN_implementation_1: Algorithm without using built in python packages
 
-Classification_model1: Algorithm implemented in R on Bank data set with variable description as given below:
+Classification_model1: Algorithm implemented in R using neuralnet library on Bank data set with variable description as given below:
 
 Variable Description:
 ID: Customer ID
