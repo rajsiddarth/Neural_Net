@@ -3,7 +3,7 @@
 
 2. NN_Multiclass: NN Algorithm for multi class classification implemented in R using neuralnet library and iris dataset
 
-3.Nnet_multiclass: Building multi class cassification neural network model tothat predicts alphabet id using alphabet_features.txt data set.Variable description as given below
+3. Nnet_multiclass: Building multi class cassification neural network model tothat predicts alphabet id using alphabet_features.txt data set.Variable description as given below
 
 -Each row data collected from image of Hindi alphabet
 
