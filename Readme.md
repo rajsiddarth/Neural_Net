@@ -1,7 +1,9 @@
 # Neural Net_implementations
 NN_implementation_1: Algorithm without using built in python packages
 
-Classification_model1: Algorithm implemented in R using neuralnet library on Bank data set with variable description as given below:
+NN_Multiclass: NN Algorithm for multi class classification implemented in R using neuralnet library and iris dataset
+
+Classification_model1: NN Algorithm for two class classification implemented in R using neuralnet library on Bank data set with variable description as given below:
 
 Variable Description:
 ID: Customer ID
