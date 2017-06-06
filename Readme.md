@@ -3,7 +3,7 @@ i. *NN_implementation_1*: Algorithm without using built in python packages
 
 ii. *NN_Multiclass*: NN Algorithm for multi class classification implemented in R using neuralnet library and iris dataset
 
-iii. *Nnet_multiclass*: Building multi class cassification neural network model tothat predicts alphabet id using alphabet_features.txt data set.Variable description as given below
+iii. *Nnet_multiclass*: Building multi class cassification neural network model to predict alphabet id using alphabet_features.txt data set.Variable description as given below
 
   *Each row data collected from image of Hindi alphabet
 
