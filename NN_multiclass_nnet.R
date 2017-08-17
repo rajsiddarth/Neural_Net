@@ -2,7 +2,7 @@
 rm(list=ls(all=TRUE))
 
 library(RCurl)
-data=read.table("https://raw.githubusercontent.com/rajsiddarth119/Neural_Net/
+data=read.table("https://raw.githubusercontent.com/rajsiddarth/Neural_Net/
                  master/alphabet_features.txt",header=F)
 
 #Target variable is the first column
