@@ -36,17 +36,13 @@ summary(nn_model)
 
 #Prediction on train data
 target_levels = colnames(class.ind(iris$Species))
+nn_model$net.result
 predicted=target_levels[max.col(nn_model$net.result[[1]])]
 actual = target_levels[max.col(nn_model$response)]
 
 # Computing confusion matrix on Train Data
 conf_Matrix = table(actual, predicted)
 conf_Matrix 
-print("Recall on train data is ")
-Recall_Sentosa=(conf_Matrix[1,1]/(conf_Matrix[1,1]+conf_Matrix[2,1]+conf_Matrix[3,1]))*100
-Recall_versicolor=(conf_Matrix[2,2]/(conf_Matrix[2,2]+conf_Matrix[1,2]+conf_Matrix[3,2]))*100
-Recall_virginica=(conf_Matrix[3,3]/(conf_Matrix[3,3]+conf_Matrix[2,3]+conf_Matrix[1,3]))*100
-
 
 # Remove target attribute from Test Data
 test_Data_wo_target = subset(test_Data, select=-c(Species))
@@ -62,8 +58,3 @@ actual = test_Data$Species
 # Compute confusion matrix and calculate recall on Train Data
 conf_Matrix = table(actual, predicted)
 conf_Matrix
-print("Recall on test data is ")
-Recall_Sentosa=(conf_Matrix[1,1]/(conf_Matrix[1,1]+conf_Matrix[2,1]+conf_Matrix[3,1]))*100
-Recall_versicolor=(conf_Matrix[2,2]/(conf_Matrix[2,2]+conf_Matrix[1,2]+conf_Matrix[3,2]))*100
-Recall_virginica=(conf_Matrix[3,3]/(conf_Matrix[3,3]+conf_Matrix[2,3]+conf_Matrix[1,3]))*100
-
