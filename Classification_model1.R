@@ -1,4 +1,5 @@
 # Build Neural Network for classification using neuralnet library.
+
 rm(list=ls(all=TRUE))
 
 library(RCurl)
@@ -12,11 +13,11 @@ data=read.table(text = getURL("https://raw.githubusercontent.com/rajsiddarth/Dat
 data=subset(data,select = -c(ID,zip)) 
 
 # R NN library takes only numeric attribues as input
+
 str(data)
-#Numeric attributes : age,exp,inc,family,CCAvg,
-#Mortgage
-#Categorical: Education,Securities account,CD Account,Online,
-#Credit card
+
+#Numeric attributes : age,exp,inc,family,CCAvg,Mortgage
+#Categorical: Education,Securities account,CD Account,Online,Credit card
 #Target Variable: Personal Loan
 
 num_data=data.frame(sapply(data[c('age','exp','inc','family','ccavg')],function(x){as.numeric(x)}))
@@ -36,9 +37,10 @@ loan=data$loan
 #Final data
 data=cbind(num_data,categ_data,loan)
 
-set.seed(456) 
+set.seed(123) 
 
-#Stratified sampling based on target variable
+#Stratified sampling based on target variable loan
+
 library(caTools)
 index=sample.split(data$loan,SplitRatio = 0.7)
 train_Data=data[index,]
@@ -53,10 +55,12 @@ formula = as.formula(paste("loan~",
                                  collapse = " + ")))
 
 nn_model = neuralnet(formula,data=train_Data, hidden=3)  
+summary(nn_model)
 
 # See covariate and result varaibles of neuralnet model
 #covariate tells about the variables that had been used to train the neural network
 #net.result[[1]] a matrix containing the overall result of the neural network
+
 result= cbind(nn_model$covariate, nn_model$net.result[[1]])
 head(result)
 
@@ -65,7 +69,7 @@ plot(nn_model)
 
 # Computing confusion matrix and calculating recall on train_Data
 
-predicted = factor(ifelse(nn_model$net.result[[1]] > 0.5, 1, 0))
+predicted = factor(ifelse(nn_model$net.result[[1]] > 0.6, 1, 0))
 
 conf_Matrix = table(train_Data$loan, predicted)
 recall = (conf_Matrix[2,2] / (conf_Matrix[2,1] + conf_Matrix[2,2])) * 100
