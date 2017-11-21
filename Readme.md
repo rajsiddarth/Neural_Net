@@ -1,4 +1,6 @@
-# Neural Net_implementations
+# Neural Net in R and Python
+
+## Data Set
 i. *NN_implementation_1*: Algorithm without using built in python packages
 
 ii. *NN_Multiclass*: NN Algorithm for multi class classification implemented in R using neuralnet library and iris dataset
