@@ -1,6 +1,6 @@
 # Neural Net in R and Python
-
-## Data Set
+## Project 1
+### Data Set
 
 The dataset is provided by a bank with variable descriptions as mentioned below. 
 
@@ -32,10 +32,23 @@ The dataset is provided by a bank with variable descriptions as mentioned below.
 
 - Personal Loan : Did the customer default on the loan or not ?
 
+### Objective
+
+A 4 layer neural network is uded to predict the outcome of the loan default of a person.
+
+#### Library Used
+- neuralnet
+
+## Project 2
+
+### Dataset
+- iris data set in R
+
+###
 i. *NN_implementation_1*: Algorithm without using built in python packages
 
 ii. *NN_Multiclass*: NN Algorithm for multi class classification implemented in R using neuralnet library and iris dataset
 
-iii. *Classification_model1*: NN Algorithm for two class classification implemented in R using neuralnet library on Bank data set with variable description as given below:
+
 
 
