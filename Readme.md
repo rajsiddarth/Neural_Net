@@ -44,11 +44,16 @@ A 4 layer neural network is uded to predict the outcome of the loan default of a
 ### Dataset
 - iris data set in R
 
-###
-i. *NN_implementation_1*: Algorithm without using built in python packages
+### Objective
 
-ii. *NN_Multiclass*: NN Algorithm for multi class classification implemented in R using neuralnet library and iris dataset
+Multi Class classification in R.
 
+#### Library Used
+- neuralnet
+- nnet
 
+## Project 3
 
+### Objective
 
+Build an algorithm for neural net implementation in python.
